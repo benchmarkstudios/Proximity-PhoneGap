@@ -2,7 +2,7 @@
 
 A lightweight PhoneGap app that calculates the device's proximity to nearby Estimote beacons and syncs this with other connected users via a Socket.IO server.
 
-- Code for the Socket.IO server can be found below, you'll need to be running before opening the app
+- Code for the Socket.IO server can be found below, you'll need this to be running before opening the app
 - Huge thanks for Konrad Dzwinel for his Estimote Beacons PhoneGap plugin (https://github.com/kdzwinel/phonegap-estimotebeacons) and sample code
 
 ## Installation
