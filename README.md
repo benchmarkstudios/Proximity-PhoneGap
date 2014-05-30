@@ -2,14 +2,14 @@
 
 A lightweight PhoneGap app that calculates the device's proximity to nearby Estimote beacons and syncs this with other connected users via a Socket.IO server.
 
-- Code for the Socket.io server can be found below, you'll need to be running before opening the app
+- Code for the Socket.IO server can be found below, you'll need to be running before opening the app
 - Huge thanks for Konrad Dzwinel for his Estimote Beacons PhoneGap plugin (https://github.com/kdzwinel/phonegap-estimotebeacons) and sample code
 
 ## Installation
 
 You'll find all the project code in the /www directory for use in your PhoneGap project. To create a new project, we recommend using Phonegap's Command-line Interface (http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html):
 
-	phonegap create proximity com.example.proximity Proximity --name Proximity
+	phonegap create proximity com.phonegap.proximity Proximity --name Proximity
 
 Next, install the Estimote Beacons PhoneGap plugin (https://github.com/kdzwinel/phonegap-estimotebeacons). `cd` into your new proximity directory and run:
 
@@ -21,7 +21,7 @@ Copy the contents of this repo's www directory into your new proximity/www folde
 
 - js/app.js: `socket = io.connect('YOUR_HOST');`
 
-Since the app will load the Socket.IO script from the host address you specify, it also needs to be whitelisted within the app's config.xml file within /www/config.xml. At present, all external hosts are white labelled but you'll want to lock this down before you move to production. Replace * in the following line with your host address, e.g. http://127.0.0.1:
+Since the app will load the Socket.IO script from the host address you specify, it also needs to be whitelisted within the app's config.xml file within /www/config.xml. At present, all external hosts are whitelisted but you'll want to lock this down before you move to production. Replace * in the following line with your host address, e.g. http://127.0.0.1:
 
 	<access origin="*" />
 
