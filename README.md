@@ -55,8 +55,6 @@ When you're ready to run the app in the iOS simulator or on your device you'll f
 
 	io.sockets.on('connection', function (socket) {
 
-	  socket.fbID = socket.manager.handshaken[socket.id].query.fbID;
-
 	  // Update location
 
 	  socket.on('updateclients', function (data) { 
